@@ -17,8 +17,8 @@ services:
       # sharing /dev/usb is sufficient for debian and ubuntu,
       # but other distributions might also need access to
       # /dev/bus/usb/*
-      - "/dev/usb:/dev/usb"
-      # - "/dev/bus/usb:/dev/bus/usb"
+      # - "/dev/usb:/dev/usb"
+      - "/dev/bus/usb:/dev/bus/usb"
     restart: unless-stopped
     volumes:
       - app_data:/data
